@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		062E6AF7241ABFF5004D066F /* CoachLevelInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062E6AF6241ABFF5004D066F /* CoachLevelInteractor.swift */; };
+		062E6AF9241AC00D004D066F /* CoachLevelProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062E6AF8241AC00D004D066F /* CoachLevelProtocols.swift */; };
+		062E6AFB241AC023004D066F /* CoachLevelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062E6AFA241AC023004D066F /* CoachLevelModel.swift */; };
+		062E6AFD241AC037004D066F /* CoachLevelRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062E6AFC241AC037004D066F /* CoachLevelRouter.swift */; };
+		062E6B02241AC68F004D066F /* achievements.json in Resources */ = {isa = PBXBuildFile; fileRef = 062E6B01241AC68E004D066F /* achievements.json */; };
+		062E6B04241ACFB6004D066F /* CoachLevelPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062E6B03241ACFB6004D066F /* CoachLevelPresenter.swift */; };
 		067DC5A023F47F84006538DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067DC59F23F47F84006538DB /* AppDelegate.swift */; };
 		067DC5A223F47F84006538DB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067DC5A123F47F84006538DB /* SceneDelegate.swift */; };
 		067DC5A423F47F84006538DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067DC5A323F47F84006538DB /* ViewController.swift */; };
@@ -30,6 +36,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		062E6AF6241ABFF5004D066F /* CoachLevelInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachLevelInteractor.swift; sourceTree = "<group>"; };
+		062E6AF8241AC00D004D066F /* CoachLevelProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachLevelProtocols.swift; sourceTree = "<group>"; };
+		062E6AFA241AC023004D066F /* CoachLevelModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachLevelModel.swift; sourceTree = "<group>"; };
+		062E6AFC241AC037004D066F /* CoachLevelRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachLevelRouter.swift; sourceTree = "<group>"; };
+		062E6B01241AC68E004D066F /* achievements.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = achievements.json; sourceTree = "<group>"; };
+		062E6B03241ACFB6004D066F /* CoachLevelPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachLevelPresenter.swift; sourceTree = "<group>"; };
 		067DC59C23F47F84006538DB /* StashCoachLevels.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StashCoachLevels.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		067DC59F23F47F84006538DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		067DC5A123F47F84006538DB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +76,77 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		062E6AEF241AB2F8004D066F /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				062E6AF0241AB31A004D066F /* Coach Levels */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		062E6AF0241AB31A004D066F /* Coach Levels */ = {
+			isa = PBXGroup;
+			children = (
+				062E6AF1241AB328004D066F /* Protocols */,
+				062E6AF2241AB32F004D066F /* View */,
+				062E6AF3241AB33E004D066F /* Interactor */,
+				062E6AFE241AC524004D066F /* Presenter */,
+				062E6AF4241AB34A004D066F /* Entity */,
+				062E6AF5241AB353004D066F /* Router */,
+			);
+			path = "Coach Levels";
+			sourceTree = "<group>";
+		};
+		062E6AF1241AB328004D066F /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				062E6AF8241AC00D004D066F /* CoachLevelProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		062E6AF2241AB32F004D066F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				067DC5C523F5E4EB006538DB /* CoachLevelTableViewController.swift */,
+				067DC5C323F5D807006538DB /* CoachLevelViewCell.swift */,
+				067DC5C123F5D4B1006538DB /* CoachLevelViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		062E6AF3241AB33E004D066F /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				062E6AF6241ABFF5004D066F /* CoachLevelInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		062E6AF4241AB34A004D066F /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				062E6AFA241AC023004D066F /* CoachLevelModel.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		062E6AF5241AB353004D066F /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				062E6AFC241AC037004D066F /* CoachLevelRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		062E6AFE241AC524004D066F /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				062E6B03241ACFB6004D066F /* CoachLevelPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 		067DC59323F47F84006538DB = {
 			isa = PBXGroup;
 			children = (
@@ -85,16 +168,15 @@
 		067DC59E23F47F84006538DB /* StashCoachLevels */ = {
 			isa = PBXGroup;
 			children = (
+				062E6B01241AC68E004D066F /* achievements.json */,
+				062E6AEF241AB2F8004D066F /* Modules */,
 				067DC59F23F47F84006538DB /* AppDelegate.swift */,
 				067DC5A123F47F84006538DB /* SceneDelegate.swift */,
-				067DC5A323F47F84006538DB /* ViewController.swift */,
-				067DC5A523F47F84006538DB /* Main.storyboard */,
 				067DC5A823F47F88006538DB /* Assets.xcassets */,
 				067DC5AA23F47F88006538DB /* LaunchScreen.storyboard */,
 				067DC5AD23F47F88006538DB /* Info.plist */,
-				067DC5C323F5D807006538DB /* CoachLevelViewCell.swift */,
-				067DC5C123F5D4B1006538DB /* CoachLevelViewCell.xib */,
-				067DC5C523F5E4EB006538DB /* CoachLevelTableViewController.swift */,
+				067DC5A323F47F84006538DB /* ViewController.swift */,
+				067DC5A523F47F84006538DB /* Main.storyboard */,
 			);
 			path = StashCoachLevels;
 			sourceTree = "<group>";
@@ -132,6 +214,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 067DC5BE23F47F88006538DB /* Build configuration list for PBXNativeTarget "StashCoachLevelsTests" */;
 			buildPhases = (
+				0627BC922094B04829A2858B /* [CP] Check Pods Manifest.lock */,
 				067DC5AE23F47F88006538DB /* Sources */,
 				067DC5AF23F47F88006538DB /* Frameworks */,
 				067DC5B023F47F88006538DB /* Resources */,
@@ -190,6 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				067DC5C223F5D4B1006538DB /* CoachLevelViewCell.xib in Resources */,
+				062E6B02241AC68F004D066F /* achievements.json in Resources */,
 				067DC5AC23F47F88006538DB /* LaunchScreen.storyboard in Resources */,
 				067DC5A923F47F88006538DB /* Assets.xcassets in Resources */,
 				067DC5A723F47F84006538DB /* Main.storyboard in Resources */,
@@ -205,6 +289,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0627BC922094B04829A2858B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StashCoachLevelsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		067DC59823F47F84006538DB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -212,9 +321,14 @@
 			files = (
 				067DC5C423F5D807006538DB /* CoachLevelViewCell.swift in Sources */,
 				067DC5A423F47F84006538DB /* ViewController.swift in Sources */,
+				062E6AF7241ABFF5004D066F /* CoachLevelInteractor.swift in Sources */,
+				062E6AFD241AC037004D066F /* CoachLevelRouter.swift in Sources */,
 				067DC5A023F47F84006538DB /* AppDelegate.swift in Sources */,
 				067DC5A223F47F84006538DB /* SceneDelegate.swift in Sources */,
+				062E6B04241ACFB6004D066F /* CoachLevelPresenter.swift in Sources */,
 				067DC5C623F5E4EB006538DB /* CoachLevelTableViewController.swift in Sources */,
+				062E6AF9241AC00D004D066F /* CoachLevelProtocols.swift in Sources */,
+				062E6AFB241AC023004D066F /* CoachLevelModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
