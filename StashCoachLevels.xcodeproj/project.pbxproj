@@ -14,6 +14,9 @@
 		067DC5A923F47F88006538DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 067DC5A823F47F88006538DB /* Assets.xcassets */; };
 		067DC5AC23F47F88006538DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 067DC5AA23F47F88006538DB /* LaunchScreen.storyboard */; };
 		067DC5B723F47F88006538DB /* StashCoachLevelsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067DC5B623F47F88006538DB /* StashCoachLevelsTests.swift */; };
+		067DC5C223F5D4B1006538DB /* CoachLevelViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 067DC5C123F5D4B1006538DB /* CoachLevelViewCell.xib */; };
+		067DC5C423F5D807006538DB /* CoachLevelViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067DC5C323F5D807006538DB /* CoachLevelViewCell.swift */; };
+		067DC5C623F5E4EB006538DB /* CoachLevelTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067DC5C523F5E4EB006538DB /* CoachLevelTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,9 @@
 		067DC5B223F47F88006538DB /* StashCoachLevelsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StashCoachLevelsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		067DC5B623F47F88006538DB /* StashCoachLevelsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StashCoachLevelsTests.swift; sourceTree = "<group>"; };
 		067DC5B823F47F88006538DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		067DC5C123F5D4B1006538DB /* CoachLevelViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoachLevelViewCell.xib; sourceTree = "<group>"; };
+		067DC5C323F5D807006538DB /* CoachLevelViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachLevelViewCell.swift; sourceTree = "<group>"; };
+		067DC5C523F5E4EB006538DB /* CoachLevelTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachLevelTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +92,9 @@
 				067DC5A823F47F88006538DB /* Assets.xcassets */,
 				067DC5AA23F47F88006538DB /* LaunchScreen.storyboard */,
 				067DC5AD23F47F88006538DB /* Info.plist */,
+				067DC5C323F5D807006538DB /* CoachLevelViewCell.swift */,
+				067DC5C123F5D4B1006538DB /* CoachLevelViewCell.xib */,
+				067DC5C523F5E4EB006538DB /* CoachLevelTableViewController.swift */,
 			);
 			path = StashCoachLevels;
 			sourceTree = "<group>";
@@ -180,6 +189,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				067DC5C223F5D4B1006538DB /* CoachLevelViewCell.xib in Resources */,
 				067DC5AC23F47F88006538DB /* LaunchScreen.storyboard in Resources */,
 				067DC5A923F47F88006538DB /* Assets.xcassets in Resources */,
 				067DC5A723F47F84006538DB /* Main.storyboard in Resources */,
@@ -200,9 +210,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				067DC5C423F5D807006538DB /* CoachLevelViewCell.swift in Sources */,
 				067DC5A423F47F84006538DB /* ViewController.swift in Sources */,
 				067DC5A023F47F84006538DB /* AppDelegate.swift in Sources */,
 				067DC5A223F47F84006538DB /* SceneDelegate.swift in Sources */,
+				067DC5C623F5E4EB006538DB /* CoachLevelTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
