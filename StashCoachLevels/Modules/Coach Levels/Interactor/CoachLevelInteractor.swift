@@ -18,7 +18,7 @@ class CoachLevelInteractor: PresentorToInteractorProtocol {
                 let levels = try JSONDecoder().decode(CoachLevels.self, from: data)
                 self.presenter?.coachLevelsFetched(levels: levels)
               } catch {
-                self.presenter?.coachLevelsFetchedFailed()
+                self.presenter?.coachLevelsFetchFailed()
               }
         }
     }

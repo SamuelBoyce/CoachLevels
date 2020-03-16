@@ -16,7 +16,7 @@ protocol PresenterToViewProtocol: class {
 
 protocol InteractorToPresenterProtocol: class {
     func coachLevelsFetched(levels: CoachLevels)
-    func coachLevelsFetchedFailed()
+    func coachLevelsFetchFailed()
 }
 
 protocol PresentorToInteractorProtocol: class {

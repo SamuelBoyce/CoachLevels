@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 class CoachLevelRouter: PresenterToRouterProtocol {
-    class func createModule() ->UIViewController{
+    class func createModule() -> UIViewController {
         let view = mainstoryboard.instantiateViewController(withIdentifier: "CoachLevelTableViewController") as? CoachLevelTableViewController
 
             let presenter: ViewToPresenterProtocol & InteractorToPresenterProtocol = CoachLevelPresenter()
@@ -27,7 +27,7 @@ class CoachLevelRouter: PresenterToRouterProtocol {
     }
     
     static var mainstoryboard: UIStoryboard{
-        return UIStoryboard(name:"Main",bundle: Bundle.main)
+        return UIStoryboard(name:"Main", bundle: Bundle.main)
     }
 
 }

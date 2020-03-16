@@ -23,7 +23,7 @@ extension CoachLevelPresenter: InteractorToPresenterProtocol {
         view?.showCoachLevels(levels: levels)
     }
     
-    func coachLevelsFetchedFailed() {
+    func coachLevelsFetchFailed() {
         view?.showError()
     }
 }
