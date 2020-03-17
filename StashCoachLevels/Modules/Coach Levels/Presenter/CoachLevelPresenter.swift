@@ -9,12 +9,12 @@
 import Foundation
 
 class CoachLevelPresenter: ViewToPresenterProtocol {
-    var view: PresenterToViewProtocol?
-    var interactor: PresentorToInteractorProtocol?
+    weak var view: PresenterToViewProtocol?
+    var interactor: PresenterToInteractorProtocol?
     var router: PresenterToRouterProtocol?
     
     func updateView() {
-        interactor?.fetchCoachLevels()
+        interactor?.fetchCoachLevels(from: "achievements", fileType: .json)
     }
 }
 

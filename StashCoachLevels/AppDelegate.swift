@@ -17,6 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let coachLevels = CoachLevelRouter.createModule()
         let nav = UINavigationController(rootViewController: coachLevels)
+        nav.navigationBar.barTintColor = .systemPurple
+        nav.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
         
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = nav

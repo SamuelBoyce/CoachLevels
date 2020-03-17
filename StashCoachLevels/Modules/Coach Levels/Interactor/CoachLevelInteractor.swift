@@ -8,11 +8,11 @@
 
 import Foundation
 
-class CoachLevelInteractor: PresentorToInteractorProtocol {
-    var presenter: InteractorToPresenterProtocol?
+class CoachLevelInteractor: PresenterToInteractorProtocol {
+    weak var presenter: InteractorToPresenterProtocol?
     
-    func fetchCoachLevels() {
-        if let path = Bundle.main.path(forResource: "achievements", ofType: "json") {
+    func fetchCoachLevels(from fileName:String, fileType:FileType) {
+        if let path = Bundle(for: type(of: self)).path(forResource: fileName, ofType: fileType.rawValue) {
             do {
                 let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
                 let levels = try JSONDecoder().decode(CoachLevels.self, from: data)
@@ -20,6 +20,12 @@ class CoachLevelInteractor: PresentorToInteractorProtocol {
               } catch {
                 self.presenter?.coachLevelsFetchFailed()
               }
+        } else {
+            self.presenter?.coachLevelsFetchFailed()
         }
     }
+}
+
+enum FileType: String {
+    case json = "json"
 }

@@ -22,8 +22,6 @@ class CoachLevelViewCell: UITableViewCell {
         self.contentView.layer.cornerRadius = 8
         self.contentView.layer.borderColor = UIColor.lightGray.cgColor
         self.contentView.layer.borderWidth = 1.0
-        
-
     }
     
     override func layoutSubviews() {

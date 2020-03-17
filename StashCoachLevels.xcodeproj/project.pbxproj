@@ -13,11 +13,27 @@
 		062E6AFD241AC037004D066F /* CoachLevelRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062E6AFC241AC037004D066F /* CoachLevelRouter.swift */; };
 		062E6B02241AC68F004D066F /* achievements.json in Resources */ = {isa = PBXBuildFile; fileRef = 062E6B01241AC68E004D066F /* achievements.json */; };
 		062E6B04241ACFB6004D066F /* CoachLevelPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062E6B03241ACFB6004D066F /* CoachLevelPresenter.swift */; };
+		062E6B07242000AA004D066F /* UIImageView+downloadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062E6B06242000AA004D066F /* UIImageView+downloadImage.swift */; };
+		062E6B0924211B02004D066F /* CoachLevelPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062E6B0824211B02004D066F /* CoachLevelPresenterTests.swift */; };
+		062E6B0A24211B73004D066F /* CoachLevelPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062E6B03241ACFB6004D066F /* CoachLevelPresenter.swift */; };
+		062E6B0B24211B76004D066F /* CoachLevelProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062E6AF8241AC00D004D066F /* CoachLevelProtocols.swift */; };
+		062E6B0C24211B7B004D066F /* CoachLevelInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062E6AF6241ABFF5004D066F /* CoachLevelInteractor.swift */; };
+		062E6B0D24211B80004D066F /* CoachLevelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062E6AFA241AC023004D066F /* CoachLevelModel.swift */; };
+		062E6B0E24211B83004D066F /* CoachLevelRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062E6AFC241AC037004D066F /* CoachLevelRouter.swift */; };
+		062E6B1024211C1F004D066F /* CoachLevelRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062E6B0F24211C1F004D066F /* CoachLevelRouterTests.swift */; };
+		062E6B1124211D89004D066F /* CoachLevelTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067DC5C523F5E4EB006538DB /* CoachLevelTableViewController.swift */; };
+		062E6B1224211F30004D066F /* CoachLevelViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067DC5C323F5D807006538DB /* CoachLevelViewCell.swift */; };
+		062E6B1324211F50004D066F /* UIImageView+downloadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062E6B06242000AA004D066F /* UIImageView+downloadImage.swift */; };
+		062E6B1424211F6F004D066F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 067DC5A523F47F84006538DB /* Main.storyboard */; };
+		062E6B1624214B54004D066F /* CoachLevelInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062E6B1524214B54004D066F /* CoachLevelInteractorTests.swift */; };
+		062E6B182421606B004D066F /* badJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = 062E6B172421606B004D066F /* badJSON.json */; };
+		062E6B1B2421622F004D066F /* goodJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = 062E6B1A2421622F004D066F /* goodJSON.json */; };
+		062E6B1D242162F3004D066F /* CoachLevelViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062E6B1C242162F3004D066F /* CoachLevelViewTests.swift */; };
+		062E6B1F242164EA004D066F /* TestObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062E6B1E242164EA004D066F /* TestObjects.swift */; };
 		067DC5A023F47F84006538DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067DC59F23F47F84006538DB /* AppDelegate.swift */; };
 		067DC5A723F47F84006538DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 067DC5A523F47F84006538DB /* Main.storyboard */; };
 		067DC5A923F47F88006538DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 067DC5A823F47F88006538DB /* Assets.xcassets */; };
 		067DC5AC23F47F88006538DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 067DC5AA23F47F88006538DB /* LaunchScreen.storyboard */; };
-		067DC5B723F47F88006538DB /* StashCoachLevelsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067DC5B623F47F88006538DB /* StashCoachLevelsTests.swift */; };
 		067DC5C223F5D4B1006538DB /* CoachLevelViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 067DC5C123F5D4B1006538DB /* CoachLevelViewCell.xib */; };
 		067DC5C423F5D807006538DB /* CoachLevelViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067DC5C323F5D807006538DB /* CoachLevelViewCell.swift */; };
 		067DC5C623F5E4EB006538DB /* CoachLevelTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067DC5C523F5E4EB006538DB /* CoachLevelTableViewController.swift */; };
@@ -40,6 +56,14 @@
 		062E6AFC241AC037004D066F /* CoachLevelRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachLevelRouter.swift; sourceTree = "<group>"; };
 		062E6B01241AC68E004D066F /* achievements.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = achievements.json; sourceTree = "<group>"; };
 		062E6B03241ACFB6004D066F /* CoachLevelPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachLevelPresenter.swift; sourceTree = "<group>"; };
+		062E6B06242000AA004D066F /* UIImageView+downloadImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+downloadImage.swift"; sourceTree = "<group>"; };
+		062E6B0824211B02004D066F /* CoachLevelPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachLevelPresenterTests.swift; sourceTree = "<group>"; };
+		062E6B0F24211C1F004D066F /* CoachLevelRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachLevelRouterTests.swift; sourceTree = "<group>"; };
+		062E6B1524214B54004D066F /* CoachLevelInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachLevelInteractorTests.swift; sourceTree = "<group>"; };
+		062E6B172421606B004D066F /* badJSON.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = badJSON.json; sourceTree = "<group>"; };
+		062E6B1A2421622F004D066F /* goodJSON.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = goodJSON.json; sourceTree = "<group>"; };
+		062E6B1C242162F3004D066F /* CoachLevelViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachLevelViewTests.swift; sourceTree = "<group>"; };
+		062E6B1E242164EA004D066F /* TestObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestObjects.swift; sourceTree = "<group>"; };
 		067DC59C23F47F84006538DB /* StashCoachLevels.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StashCoachLevels.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		067DC59F23F47F84006538DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		067DC5A623F47F84006538DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -47,7 +71,6 @@
 		067DC5AB23F47F88006538DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		067DC5AD23F47F88006538DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		067DC5B223F47F88006538DB /* StashCoachLevelsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StashCoachLevelsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		067DC5B623F47F88006538DB /* StashCoachLevelsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StashCoachLevelsTests.swift; sourceTree = "<group>"; };
 		067DC5B823F47F88006538DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		067DC5C123F5D4B1006538DB /* CoachLevelViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoachLevelViewCell.xib; sourceTree = "<group>"; };
 		067DC5C323F5D807006538DB /* CoachLevelViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachLevelViewCell.swift; sourceTree = "<group>"; };
@@ -146,6 +169,7 @@
 		062E6B05241FF817004D066F /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				062E6B06242000AA004D066F /* UIImageView+downloadImage.swift */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -186,8 +210,14 @@
 		067DC5B523F47F88006538DB /* StashCoachLevelsTests */ = {
 			isa = PBXGroup;
 			children = (
-				067DC5B623F47F88006538DB /* StashCoachLevelsTests.swift */,
 				067DC5B823F47F88006538DB /* Info.plist */,
+				062E6B0824211B02004D066F /* CoachLevelPresenterTests.swift */,
+				062E6B0F24211C1F004D066F /* CoachLevelRouterTests.swift */,
+				062E6B1524214B54004D066F /* CoachLevelInteractorTests.swift */,
+				062E6B1C242162F3004D066F /* CoachLevelViewTests.swift */,
+				062E6B172421606B004D066F /* badJSON.json */,
+				062E6B1A2421622F004D066F /* goodJSON.json */,
+				062E6B1E242164EA004D066F /* TestObjects.swift */,
 			);
 			path = StashCoachLevelsTests;
 			sourceTree = "<group>";
@@ -216,7 +246,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 067DC5BE23F47F88006538DB /* Build configuration list for PBXNativeTarget "StashCoachLevelsTests" */;
 			buildPhases = (
-				0627BC922094B04829A2858B /* [CP] Check Pods Manifest.lock */,
 				067DC5AE23F47F88006538DB /* Sources */,
 				067DC5AF23F47F88006538DB /* Frameworks */,
 				067DC5B023F47F88006538DB /* Resources */,
@@ -286,35 +315,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				062E6B1424211F6F004D066F /* Main.storyboard in Resources */,
+				062E6B182421606B004D066F /* badJSON.json in Resources */,
+				062E6B1B2421622F004D066F /* goodJSON.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		0627BC922094B04829A2858B /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-StashCoachLevelsTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		067DC59823F47F84006538DB /* Sources */ = {
@@ -324,6 +331,7 @@
 				067DC5C423F5D807006538DB /* CoachLevelViewCell.swift in Sources */,
 				062E6AF7241ABFF5004D066F /* CoachLevelInteractor.swift in Sources */,
 				062E6AFD241AC037004D066F /* CoachLevelRouter.swift in Sources */,
+				062E6B07242000AA004D066F /* UIImageView+downloadImage.swift in Sources */,
 				067DC5A023F47F84006538DB /* AppDelegate.swift in Sources */,
 				062E6B04241ACFB6004D066F /* CoachLevelPresenter.swift in Sources */,
 				067DC5C623F5E4EB006538DB /* CoachLevelTableViewController.swift in Sources */,
@@ -336,7 +344,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				067DC5B723F47F88006538DB /* StashCoachLevelsTests.swift in Sources */,
+				062E6B1224211F30004D066F /* CoachLevelViewCell.swift in Sources */,
+				062E6B1124211D89004D066F /* CoachLevelTableViewController.swift in Sources */,
+				062E6B1624214B54004D066F /* CoachLevelInteractorTests.swift in Sources */,
+				062E6B1024211C1F004D066F /* CoachLevelRouterTests.swift in Sources */,
+				062E6B0924211B02004D066F /* CoachLevelPresenterTests.swift in Sources */,
+				062E6B0C24211B7B004D066F /* CoachLevelInteractor.swift in Sources */,
+				062E6B1D242162F3004D066F /* CoachLevelViewTests.swift in Sources */,
+				062E6B1324211F50004D066F /* UIImageView+downloadImage.swift in Sources */,
+				062E6B0E24211B83004D066F /* CoachLevelRouter.swift in Sources */,
+				062E6B0A24211B73004D066F /* CoachLevelPresenter.swift in Sources */,
+				062E6B1F242164EA004D066F /* TestObjects.swift in Sources */,
+				062E6B0D24211B80004D066F /* CoachLevelModel.swift in Sources */,
+				062E6B0B24211B76004D066F /* CoachLevelProtocols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

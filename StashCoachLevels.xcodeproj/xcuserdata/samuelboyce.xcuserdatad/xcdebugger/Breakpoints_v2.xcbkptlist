@@ -3,4 +3,54 @@
    uuid = "8BB99ACC-A58F-42DE-9C51-6CAA948EAA92"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "437F2FB5-C76D-4B21-A0FC-5522549796FC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StashCoachLevels/Modules/Coach Levels/Interactor/CoachLevelInteractor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "fetchCoachLevels(from:fileType:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "437F2FB5-C76D-4B21-A0FC-5522549796FC - 26878f94febaa08d"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StashCoachLevels.CoachLevelInteractor.fetchCoachLevels(from: Swift.String, fileType: StashCoachLevels.FileType) -&gt; ()"
+                  moduleName = "StashCoachLevels"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/samuelboyce/Documents/StashCoachLevels/StashCoachLevels/Modules/Coach%20Levels/Interactor/CoachLevelInteractor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "666">
+               </Location>
+               <Location
+                  uuid = "437F2FB5-C76D-4B21-A0FC-5522549796FC - 75015deb098a7f90"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StashCoachLevelsTests.CoachLevelInteractor.fetchCoachLevels(from: Swift.String, fileType: StashCoachLevelsTests.FileType) -&gt; ()"
+                  moduleName = "StashCoachLevelsTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/samuelboyce/Documents/StashCoachLevels/StashCoachLevels/Modules/Coach%20Levels/Interactor/CoachLevelInteractor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "666">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

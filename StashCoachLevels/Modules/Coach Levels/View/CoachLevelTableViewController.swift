@@ -14,7 +14,10 @@ class CoachLevelTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: nil, action: nil)
+        
         tableView.register(UINib(nibName: String(describing: CoachLevelViewCell.self), bundle: nil), forCellReuseIdentifier: CoachLevelViewCell.reuseIdentifier)
+        tableView.separatorStyle = .none
         presenter?.updateView()
     }
     
@@ -50,6 +53,10 @@ class CoachLevelTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: false)
     }
+    
+    override func tableView(_ tableView: UITableView, didEndDisplaying cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        
+    }
 }
 
 extension CoachLevelTableViewController: PresenterToViewProtocol {
@@ -63,17 +70,5 @@ extension CoachLevelTableViewController: PresenterToViewProtocol {
         let alert = UIAlertController(title: "Alert", message: "Problem Fetching Levels", preferredStyle: UIAlertController.Style.alert)
         alert.addAction(UIAlertAction(title: "Okay", style: UIAlertAction.Style.default, handler: nil))
         self.present(alert, animated: true, completion: nil)
-    }
-}
-
-extension UIImageView {
-    func downloadImageFrom(link:String) {
-        let dataTask = URLSession.shared.dataTask(with: URL(string:link)!, completionHandler: { (data, response, error) -> Void in
-            DispatchQueue.main.async {
-                if let data = data { self.image = UIImage(data: data) }
-            }
-        })
-        
-        dataTask.resume()
     }
 }

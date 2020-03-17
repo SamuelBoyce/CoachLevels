@@ -19,14 +19,14 @@ protocol InteractorToPresenterProtocol: class {
     func coachLevelsFetchFailed()
 }
 
-protocol PresentorToInteractorProtocol: class {
+protocol PresenterToInteractorProtocol: class {
     var presenter: InteractorToPresenterProtocol? {get set}
-    func fetchCoachLevels()
+    func fetchCoachLevels(from fileName:String, fileType:FileType)
 }
 
 protocol ViewToPresenterProtocol: class {
     var view: PresenterToViewProtocol? {get set}
-    var interactor: PresentorToInteractorProtocol? {get set}
+    var interactor: PresenterToInteractorProtocol? {get set}
     var router: PresenterToRouterProtocol? {get set}
     func updateView()
 }
