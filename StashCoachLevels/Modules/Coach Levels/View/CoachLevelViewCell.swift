@@ -18,6 +18,9 @@ class CoachLevelViewCell: UITableViewCell {
     @IBOutlet var backgroundImage: UIImageView!
     @IBOutlet var levelFrameView: UIView!
     
+    //This construction will prevent cells from downloading the incorrect image as they are recycled. It's not ideal, however, as it will lead to many more image downloads than needed as a new one is started every time the cell is dequeued. An ideal solution would have image caching so that only one download task happened per Level. Even better would be to have a queue that held all of the data tasks as cells are scrolled, this way incomplete tasks could be suspended and resumed as their corresponding cells left and re-entered the tableview.
+    var dataTask: URLSessionDataTask?
+    
     override func awakeFromNib() {
         self.contentView.layer.cornerRadius = 8
         self.contentView.layer.borderColor = UIColor.lightGray.cgColor
@@ -39,5 +42,21 @@ class CoachLevelViewCell: UITableViewCell {
         progressBar.progress = Float(level.progress) / Float(level.total)
         
         contentView.alpha = level.accessible ? 1.0 : 0.5
+        
+        if let url = URL(string: level.imageUrl) {
+            dataTask = URLSession.shared.dataTask(with: url, completionHandler: { (data, response, error) -> Void in
+                DispatchQueue.main.async {
+                    if let data = data { self.imageView!.image = UIImage(data: data) }
+                }
+            })
+        }
+    }
+    
+    func downloadImage() {
+        dataTask?.resume()
+    }
+    
+    func haltDownload() {
+        dataTask?.cancel()
     }
 }

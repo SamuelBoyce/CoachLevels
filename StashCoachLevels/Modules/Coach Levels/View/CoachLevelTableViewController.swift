@@ -14,6 +14,7 @@ class CoachLevelTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.navigationBar.barStyle = .black
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: nil, action: nil)
         
         tableView.register(UINib(nibName: String(describing: CoachLevelViewCell.self), bundle: nil), forCellReuseIdentifier: CoachLevelViewCell.reuseIdentifier)
@@ -37,7 +38,7 @@ class CoachLevelTableViewController: UITableViewController {
         
         thisCell.formatForCoachLevel(level: thisLevel)
         thisCell.backgroundImage.image = UIImage(named: "placeholder")
-        thisCell.backgroundImage.downloadImageFrom(link: thisLevel.imageUrl)
+        thisCell.downloadImage()
         
         return thisCell
     }
@@ -55,7 +56,14 @@ class CoachLevelTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didEndDisplaying cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        
+        guard let cell = cell as? CoachLevelViewCell else {
+            return
+        }
+        cell.haltDownload()
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
     }
 }
 

@@ -19,6 +19,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let nav = UINavigationController(rootViewController: coachLevels)
         nav.navigationBar.barTintColor = .systemPurple
         nav.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
+        let navigationBarAppearace = UINavigationBar.appearance()
+        navigationBarAppearace.tintColor = .white
         
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = nav
@@ -26,5 +28,4 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         return true
     }
-
 }
