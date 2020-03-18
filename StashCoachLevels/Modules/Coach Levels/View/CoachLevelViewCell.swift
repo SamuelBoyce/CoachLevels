@@ -46,7 +46,7 @@ class CoachLevelViewCell: UITableViewCell {
         if let url = URL(string: level.imageUrl) {
             dataTask = URLSession.shared.dataTask(with: url, completionHandler: { (data, response, error) -> Void in
                 DispatchQueue.main.async {
-                    if let data = data { self.imageView!.image = UIImage(data: data) }
+                    if let data = data { self.backgroundImage!.image = UIImage(data: data) }
                 }
             })
         }
